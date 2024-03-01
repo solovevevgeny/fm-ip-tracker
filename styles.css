@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+    --ff: "Rubik", sans-serif;
+    --fw-thin: 400;
+    --fw-normal: 500;
+    --fw-bold: 700;
+
+    --fs: 16px;
+    --fs-huge: 28px;
+
+    --colorVeryDarkGray: hsl(0, 0%, 17%);
+    --colorDarkGray: hsl(0, 0%, 59%);
+    --color-white: #fff;
+    --color-black: #000;
+
+    --br: 1rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ .container  {
+    /* max-width: 1240px; */
+    min-width: 1240px; 
+}
+
+section {
+    width: 100%;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    display: flex;
+    flex-direction: column;
+    background: url('./images/google-map-background.png') no-repeat;
+    back
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('./images/pattern-bg-desktop.png') no-repeat;
+    background-size: 100% auto;
+    min-height: 280px;
+}
+
+
+.info-panel {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: var(--br);
+    background: var(--color-white);
+    padding: 30px 40px;
+    margin-top: -60px;
+}
+
+.info-panel__card-title {
+    font-weight: var(--fw-thin);
+    color: var(--colorDarkGray);
+}
+
+.info-panel__card-value {
+    font-size: var(--fs-huge);
+    font-weight: var(--fw-bold);
+    color: var(--colorVeryDarkGray);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search {
+    background: var(--color-white);
+    color: var(--colorVeryDarkGray);
+    border-radius: var(--br);
+    overflow: hidden;
+    margin: 10px 0 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+
+}
+
+.search-input {
+    font-family: var(--ff);
+    padding:20px 30px;
+    border-radius: var(--br);
+    border:0px;
+    width:100%;
+}
+
+
+.search-button {
+    font-family: var(--ff);
+    height:100%;
+    padding:20px 30px;
+    background: var(--color-black);
+    border:0px;
+    color:var(--color-white);
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .info-panel {
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .container {
+        min-width: 90%;
+    }
+    header {
+        width:100%;
+        background: url('./images/pattern-bg-mobile.png');
+        background-size: 100% auto;
+    }
+}

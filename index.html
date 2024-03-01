@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="tracker.js"></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+
+</head>
+<body>
+
+  <header>
+    <div class="container flex-center">
+        <h1>IP Address Tracker</h1>
+
+        <div class="search">
+          <input id="search-input" class="search-input" type="text" placeholder="Search for any IP address or domain">
+          <button class="search-button" onClick=toggleSearch()>
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+    </div>
+  </header>
+
+  <main>
+        <div class="container">
+          <div class="info-panel">
+            <div class="info-panel__card">
+              <div class="info-panel__card-title">IP Address</div>
+              <div class="info-panel__card-value" id="label-ip">192.168.0.1</div>
+            </div>
+            <div class="info-panel__card">
+              <div class="info-panel__card-title">Location</div>
+              <div class="info-panel__card-value" id="label-city">Saint-Petersbug</div>
+            </div>
+            <div class="info-panel__card">
+              <div class="info-panel__card-title">Timezone</div>
+              <div class="info-panel__card-value" id="label-TZ">+03:00</div>
+            </div>
+            <div class="info-panel__card">
+              <div class="info-panel__card-title">ISP</div>
+              <div class="info-panel__card-value"  id="label-isp">Rostelecom</div>
+            </div>
+        
+          </div>
+        </div>
+  </main>
+
+
+
+  </div>
+
+
+
+  
+ 
+</body>
+</html>
